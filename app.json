@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "InterLoc",
+    "slug": "InterLoc",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.8.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo_interTP.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/logo_interloc.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow app to access your camera."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.InterLocTP"
+    },
+    "web": {
+      "build": {
+        "babel": {
+          "include": [
+            "static-container"
+          ]
+        }
+      }
+    },
+    "android": {
+      "package": "com.interloc.app",
+      "versionCode": 43,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "35c28322-148e-4454-a360-54115d57047b"
+      }
+    }
+  }
+}
